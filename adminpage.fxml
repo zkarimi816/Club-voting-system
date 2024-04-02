@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="508.0" prefWidth="700.0" styleClass="anchorpane-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainadmin">
+   <children>
+      <AnchorPane fx:id="mainadmin" layoutX="12.0" layoutY="36.0" prefHeight="455.0" prefWidth="671.0" style="-fx-background-color: transparent;">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="294.0" layoutX="235.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/Untitled-4.png" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="168.0" layoutY="253.0" startX="-19.0" stroke="#45ada8" strokeWidth="3.0" />
+            <Line endX="100.0" layoutX="415.0" layoutY="253.0" startX="-19.0" stroke="#45ada8" strokeWidth="3.0" />
+            <Label layoutX="284.0" layoutY="-42.0" prefHeight="34.0" prefWidth="75.0" text="Admin Page" textFill="#0f5561">
+               <font>
+                  <Font name="Ara Alharbi Syria-Alqusair" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="251.0" text="Club Voting" textFill="#0f5561">
+               <font>
+                  <Font name="Ara Alharbi Syria-Alqusair" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="361.0" layoutY="251.0" text="System">
+               <font>
+                  <Font name="Ara Alharbi Syria-Alqusair" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="242.0" layoutY="322.0" text="Welcome to Admin Page !">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <MenuButton layoutX="621.0" layoutY="5.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#createpage" text="View Users Table" />
+          <MenuItem mnemonicParsing="false" onAction="#createpagecandidate" text="View Candidates Table" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter1" text="View Debate Voter" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter2" text="Computer Science Voter" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter3" text="Speech Club Voter" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter4" text="Art Club Voter" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter5" text="Music Club Voter" />
+            <MenuItem mnemonicParsing="false" onAction="#createpagevoter6" text="Book Club Voter" />
+        </items>
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/MENUBAR2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </MenuButton>
+      <Button fx:id="logout" layoutX="9.0" layoutY="2.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="40.0" style="-fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

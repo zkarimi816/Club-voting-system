@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ArtVoterform" prefHeight="508.0" prefWidth="557.0" styleClass="anchorpane-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ArtVoterControllar">
+   <children>
+      <Label layoutX="54.0" layoutY="90.0" text="ID :" textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="54.0" layoutY="136.0" text="Full Name :" textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="voterid" alignment="CENTER" layoutX="178.0" layoutY="80.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="voterlname" alignment="CENTER" layoutX="178.0" layoutY="123.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15px;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button layoutX="212.0" layoutY="391.0" mnemonicParsing="false" onAction="#voterButton" prefHeight="97.0" prefWidth="105.0" style="-fx-background-color: transparent;" styleClass="button1" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/vote.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="497.0" layoutY="16.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: transaprent; -fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/fast-forward2.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="President" layoutX="352.0" layoutY="231.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="vpresident" layoutX="352.0" layoutY="293.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <TextField fx:id="secretary" layoutX="352.0" layoutY="355.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label alignment="CENTER" layoutX="174.0" layoutY="12.0" prefHeight="67.0" prefWidth="94.0" text="Start" textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="264.0" layoutY="12.0" text="Voting">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="club" layoutX="352.0" layoutY="169.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-radius: 15;">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Label layoutX="54.0" layoutY="178.0" text="Club Name :" textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="clublist" layoutX="178.0" layoutY="170.0" onAction="#clubname" prefWidth="150.0" style="-fx-background-radius: 15px;" />
+      <Label layoutX="54.0" layoutY="234.0" text="President :" textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="presidentlist" layoutX="178.0" layoutY="232.0" onAction="#presidentname" prefWidth="150.0" style="-fx-background-radius: 15px;" />
+      <Label layoutX="54.0" layoutY="300.0" text="Vice President: " textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="vplist" layoutX="178.0" layoutY="294.0" onAction="#vpname" prefWidth="150.0" style="-fx-background-radius: 15px;" />
+      <Label layoutX="54.0" layoutY="361.0" text="Secretary :" textFill="#41494a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="secretarylist" layoutX="178.0" layoutY="359.0" onAction="#secratoryname" prefWidth="150.0" style="-fx-background-radius: 15px;" />
+   </children>
+</AnchorPane>

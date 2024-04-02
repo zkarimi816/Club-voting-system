@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Candidate" prefHeight="505.0" prefWidth="557.0" styleClass="anchorpane-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homecontrol">
+   <children>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="45.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/politics.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="227.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/computer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="409.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/conversation.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="45.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/creativity.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="227.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/musician.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="140.0" layoutX="409.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/icons%20for%20voting%20system/books.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="debate" layoutX="33.0" layoutY="210.0" mnemonicParsing="false" onAction="#debatebutton" prefHeight="33.0" prefWidth="122.0" stylesheets="@application.css" text="Debate Club" />
+      <Button fx:id="csc" layoutX="195.0" layoutY="210.0" mnemonicParsing="false" onAction="#cscbutton" prefHeight="33.0" prefWidth="165.0" stylesheets="@application.css" text="Computer Science Club" />
+      <Button fx:id="speech" layoutX="399.0" layoutY="210.0" mnemonicParsing="false" onAction="#speechbutton" prefHeight="33.0" prefWidth="122.0" stylesheets="@application.css" text="Speech Club" />
+      <Button fx:id="art" layoutX="35.0" layoutY="387.0" mnemonicParsing="false" onAction="#artbutton" prefHeight="33.0" prefWidth="122.0" stylesheets="@application.css" text="Art Club" />
+      <Button fx:id="music" layoutX="218.0" layoutY="387.0" mnemonicParsing="false" onAction="#musicbutton" prefHeight="33.0" prefWidth="122.0" stylesheets="@application.css" text="Music Club" />
+      <Button fx:id="book" layoutX="399.0" layoutY="387.0" mnemonicParsing="false" onAction="#bookbutton" prefHeight="33.0" prefWidth="122.0" stylesheets="@application.css" text="Book Club" />
+      <Label layoutX="240.0" layoutY="15.0" text="Candidate " textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="speechresults" prefHeight="508.0" prefWidth="557.0" styleClass="anchorpane-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SpeechResultsController">
+   <children>
+      <TableView fx:id="table1" layoutX="36.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css">
+        <columns>
+          <TableColumn fx:id="president" prefWidth="148.0" text="Names " />
+          <TableColumn fx:id="results" prefWidth="50.0" text="Votes" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table2" layoutX="300.0" layoutY="53.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css">
+        <columns>
+          <TableColumn fx:id="vpresident" prefWidth="148.0" text="Names" />
+          <TableColumn fx:id="result2" prefWidth="50.0" text="Votes" />
+        </columns>
+      </TableView>
+      <TableView fx:id="table3" layoutX="167.0" layoutY="294.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css">
+        <columns>
+          <TableColumn fx:id="secretary" prefWidth="148.0" text="Names " />
+          <TableColumn fx:id="result3" prefWidth="50.0" text="Votes" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="11.0" prefHeight="56.0" prefWidth="200.0" text="President" textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="13.0" text="Vice President" textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="253.0" text="Secretary" textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="466.0" layoutY="448.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/icons%20for%20voting%20system/fast-forward2.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

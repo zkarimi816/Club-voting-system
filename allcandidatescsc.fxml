@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="353.0" prefWidth="700.0" styleClass="anchorpane-background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.allcandidatescsc">
+   <children>
+      <Label layoutX="219.0" layoutY="21.0" text="All Computer Science Club Candidates" textFill="#0f5561">
+         <font>
+            <Font name="Ara Alharbi Syria-Alqusair" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="TABLE" layoutY="103.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@application.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="56.0" text="ID" />
+          <TableColumn fx:id="fullname" prefWidth="109.0" text="Full Name" />
+            <TableColumn fx:id="age" prefWidth="49.0" text="Age" />
+            <TableColumn fx:id="major" prefWidth="104.0" text="Major" />
+            <TableColumn fx:id="gpa" prefWidth="49.0" text="GPA" />
+            <TableColumn fx:id="email" prefWidth="114.0" text="Email" />
+            <TableColumn fx:id="status" prefWidth="63.0" text="Status" />
+            <TableColumn fx:id="position" prefWidth="84.0" text="Position" />
+            <TableColumn fx:id="club" prefWidth="81.0" text="Club" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
